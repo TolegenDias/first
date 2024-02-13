@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Добро пожаловать</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: auto; /* Помещает футер внизу страницы */
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+            <span class="fs-4">главное</span>
+        </a>
+
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Магазин</a>
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Войти</a>
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Зарегистрироваться</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Демо</h1>
+                    <p class="lead text-body-secondary">Начало</p>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">О нас </a>
+                        <a href="#" class="btn btn-secondary my-2">О вас</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Начало разработки веб проекта!<a href="https://hibernate.org/">Хибернате</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
